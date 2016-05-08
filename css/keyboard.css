@@ -17,7 +17,8 @@ body {
 }
 
 #play-back:active,
-#start-over:active {
+#start-over:active,
+#home:active {
 	background: #222;
 	border: 1px solid white;
 	color: #fff;
@@ -25,8 +26,14 @@ body {
 }
 
 #play-back:focus,
-#start-over:focus {
+#start-over:focus,
+#home:focus {
 	outline: none;
+}
+
+button > a {
+	text-decoration: none;
+	color: #222;
 }
 
 #button-div {
