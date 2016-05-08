@@ -24,6 +24,7 @@ one.addEventListener('click', function () {
 	a.play();
 
 	melody.push(a);
+
 })
 
 two.addEventListener('click', function () {
@@ -31,6 +32,7 @@ two.addEventListener('click', function () {
 	b.play();
 
 	melody.push(b);
+
 })
 
 three.addEventListener('click', function () {
@@ -38,6 +40,7 @@ three.addEventListener('click', function () {
 	c.play();
 
 	melody.push(c);
+
 })
 
 four.addEventListener('click', function () {
@@ -45,6 +48,7 @@ four.addEventListener('click', function () {
 	d.play();
 
 	melody.push(d);
+
 })
 
 five.addEventListener('click', function () {
@@ -52,6 +56,7 @@ five.addEventListener('click', function () {
 	e.play();
 
 	melody.push(e);
+
 })
 
 six.addEventListener('click', function () {
@@ -66,6 +71,7 @@ seven.addEventListener('click', function () {
 	g.play();
 
 	melody.push(g);
+
 })
 
 play.addEventListener('click', function () {
@@ -85,5 +91,5 @@ function playlist() {
 		audio.play();
 
 		if (i == melody.length) i = 0;
-	}, 500)
+	}, 1000);
 }

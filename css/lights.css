@@ -12,6 +12,10 @@ body {
 	font-family: sans-serif;
 }
 
+.text-center {
+	text-align: center;
+}
+
 #play-back:active,
 #start-over:active {
 	background: #222;
@@ -25,11 +29,15 @@ body {
 	outline: none;
 }
 
+#button-div {
+	display: flex;
+	justify-content: space-between;
+}
+
 .button {
 	color: #222;
 	width: 14vmin;
 	height: 7vmin;
-	text-align: center;
 	background: white;
 	font-size: 3vmin;
 	display: inline-block;
@@ -43,8 +51,14 @@ body {
 	cursor: pointer;
 }
 
+#instructions {
+	color: #fff;
+	font-size: 4vmin;
+	padding: 1vmin;
+}
+
 #light-container {
-	height: 60vmin;
+	height: 50vmin;
 	width: 100%;
 	padding-right: 10px;
 	padding-top: 50px;
@@ -67,9 +81,8 @@ body {
 	cursor: pointer;
 	line-height: 20vmin;
 	font-size: 5vmin;
-	text-align: center;
 	color: #fff;
-	margin-top: 20vmin;
+	margin-top: 10vmin;
 }
 
 #one {
