@@ -69,23 +69,21 @@ seven.addEventListener('click', function () {
 })
 
 play.addEventListener('click', function () {
-	var current = 0;
-	//	for (var i = 0; i < melody.length; i++) {
-	//		melody[i].currentTime = 0;
-	//		melody[i].play();
-	//	}
-
-	if (current < melody.length) {
-		melody[current].addEventListener('ended', function () {
-			current++;
-			melody[current];
-			console.log(melody[current]);
-		})
-	} else {
-		current = 0;
-	}
+	playlist();
 })
 
 clear.addEventListener('click', function () {
 	melody = [];
 })
+
+
+function playlist() {
+	var i = 0;
+
+	setInterval(function () {
+		var audio = melody[i++];
+		audio.play();
+
+		if (i == melody.length) i = 0;
+	}, 500)
+}
